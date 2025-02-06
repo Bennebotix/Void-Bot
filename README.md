@@ -1,5 +1,19 @@
 ### Void-Bot
 
+## Installation
+
+Just copy void_bot.min.js into your project before all of your assets;
+
+JavaScript: 
+```JavaScript
+class Bot{constructor(b,f,g,e,c,k,l){this.pI=b;this.sF=f;this.gMF=g;this.pF=e;this.stF=c;this.gSF=k;this.mD=l;this.s=class{constructor(d,a,m,n){this.id=d;this.d=a;this.p=n;this.gS=this.p.stF(m,[this.id]);this.o=this.p.sF(this.gS,this.p.pI);this.mover=(this.p.pI+(this.d-1)%2-1)%2+1;this.c=[];this.b="finalized"==this.o.state;!this.b&&this.d<this.p.mD&&this.fill()}fill(){let d=this.p.gMF(this.gS,this.mover%2+1);for(let a=0;a<d.length;a++)this.c.push(new this.p.s(d[a],this.d+1,this.gS,this.p))}get s(){let d=this.c.some(a=>"loss"==a.o.name);return 1==this.d&&d?-Infinity:this.b?this.o.value/Math.pow(this.d,2):this.c.map(a=>a.s).reduce((a,h)=>a+h,0)}}}get gS(){return this.gSF()}play(){let b=this.gMF(this.gS,this.pI),f=-Infinity,g={id:b[b.length-1]};for(let e=0;e<b.length;e++){let c=new this.s(b[e],1,this.gS,this);c.s>f&&(g=c,f=c.s)}this.pF(g.id)}};
+```
+
+HTML:
+```HTML
+<script type="text/javascript">class Bot{constructor(b,f,g,e,c,k,l){this.pI=b;this.sF=f;this.gMF=g;this.pF=e;this.stF=c;this.gSF=k;this.mD=l;this.s=class{constructor(d,a,m,n){this.id=d;this.d=a;this.p=n;this.gS=this.p.stF(m,[this.id]);this.o=this.p.sF(this.gS,this.p.pI);this.mover=(this.p.pI+(this.d-1)%2-1)%2+1;this.c=[];this.b="finalized"==this.o.state;!this.b&&this.d<this.p.mD&&this.fill()}fill(){let d=this.p.gMF(this.gS,this.mover%2+1);for(let a=0;a<d.length;a++)this.c.push(new this.p.s(d[a],this.d+1,this.gS,this.p))}get s(){let d=this.c.some(a=>"loss"==a.o.name);return 1==this.d&&d?-Infinity:this.b?this.o.value/Math.pow(this.d,2):this.c.map(a=>a.s).reduce((a,h)=>a+h,0)}}}get gS(){return this.gSF()}play(){let b=this.gMF(this.gS,this.pI),f=-Infinity,g={id:b[b.length-1]};for(let e=0;e<b.length;e++){let c=new this.s(b[e],1,this.gS,this);c.s>f&&(g=c,f=c.s)}this.pF(g.id)}};</script>
+```
+
 ## Usage
 
 ```JavaScript
