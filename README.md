@@ -11,7 +11,7 @@ Just load void_bot.min.js into your project before all of your assets:
 
 ```JavaScript
 const bot = new Bot(
-  "X" /* id used for the player, can be anything */,
+  "X", /* example */ /* id used for the player, can be anything */
 
 
   ( /*
@@ -89,5 +89,5 @@ const bot = new Bot(
   10 /* maxumim depth for the bot to search, this get pretty bi pretty fast */
 );
 
-// To make a move, run "bot.play()"
+// To make a move, run "bot.move()"
 ```
