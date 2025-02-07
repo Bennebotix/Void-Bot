@@ -94,7 +94,7 @@ const bot = new Bot(
   },
 
 
-  10 /* maxumim depth for the bot to search, this get pretty bi pretty fast */
+  10 /* maxumim depth for the bot to search */
 );
 
 // To make a move, run "bot.move()"
