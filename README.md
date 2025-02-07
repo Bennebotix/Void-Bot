@@ -90,7 +90,9 @@ const bot = new Bot(
     player, /* the player to de the blocking */
     move /* the move id to be blocked */
   ) => {
+    /* v example v */
     return true; /* example for tic tac toe, because every move can be blocked */
+    /* ^ example ^ */
   },
 
 
