@@ -1,4 +1,5 @@
 ### Void-Bot
+A minimax bot for all 2-player turnbased games (Chess, TicTacToe, etc...)
 
 ## Installation
 
@@ -85,7 +86,7 @@ const bot = new Bot(
     /* ^ example ^ */
   },
 
-  ( /* can block functon, returnwether a certain move can be blocked */
+  ( /* can block functon, return wether a certain move can be blocked */
     gameState,
     player, /* the player to de the blocking */
     move /* the move id to be blocked */
