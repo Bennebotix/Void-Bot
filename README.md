@@ -15,7 +15,7 @@ const bot = new Bot(
 
 
   ( /*
-      score function that calculates the score of a player at a cartian game state
+      score function that calculates the score of a player at a certian game state
       negative values are sates the bot wants to avoid
     */
     gameState /* the current sate (like JSON object, array, etc...) */,
